@@ -1,0 +1,52 @@
+#CartContainer 
+{
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top:0;
+    right: 0%;
+    flex-direction: column;
+    z-index: 1;
+    height: 100%;
+    width: 0px;
+    transition :all ease-out 0.2s;
+    background-color: white;
+    gap :25px;
+    align-items: center;
+    opacity: 0;
+}
+
+#CartContainer.active
+{
+    opacity: 1;
+    width: 520px;
+}
+
+#CartContainer button
+{
+    width:60%;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+
+}
+
+#CartContainer p
+{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#CheckoutBtn
+{
+    background-color: rgb(111, 255, 111);
+}
+
+#CloseBtn
+{
+    background-color: rgb(255, 154, 154);
+}
