@@ -9,11 +9,16 @@ const MainLayout = () =>
         document.querySelector(".overlay").classList.add("active");
         document.querySelector("#CartContainer").classList.add("active");
     } 
+    function CloseCart()
+    {
+        document.querySelector("#CartContainer").classList.remove("active");
+        document.querySelector(".overlay").classList.remove("active");
+    }
 
     return (
         <div>
-            <Cart/>
-            <div className="overlay"/>
+            <Cart CloseCart={CloseCart}/>
+            <div className="overlay" onClick={CloseCart}/>
             <div className="navBar">    
             <li><Link to="/">Fake Store</Link></li>
             <li><Link to="/">Home</Link></li>
