@@ -1,0 +1,60 @@
+.navBar
+{
+    background-color: black;
+    gap: 5%;
+    margin: 0px;
+    display: flex;
+    padding: 2.5%  5%;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navBar  *
+{
+    color: white;
+    font-size: 30px;
+}
+
+.navBar >li:first-child >*
+{
+    font-size: 45px;
+    font-weight: bold;
+    color: #46ffd3;
+}
+
+.navBar li:nth-child(2)
+{
+    margin-left: auto;
+}
+.navBar li
+{
+    transition: all 0.2s ease-out 0.0s;
+}
+.navBar li:hover
+{
+    transform: scale(1.2);
+    display: inline-block;
+}
+a
+{
+    text-decoration: none;
+}
+
+#cartDiv
+{
+    position: relative;
+}
+
+#cartNotification
+{
+    top: 33%;
+    left: 77%;
+    position: absolute;
+    font-size: 0.4em;
+    background-color: rgb(164, 24, 24);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
