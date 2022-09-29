@@ -1,0 +1,10 @@
+
+#ProductsContainer
+{
+    background-color: #F9F9F9;
+    padding: 5% 10%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
+    grid-template-rows: repeat(auto-fit,1fr);
+}

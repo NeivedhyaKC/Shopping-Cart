@@ -1,0 +1,42 @@
+.ProductCard
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    border: solid #E8E8E8 3px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+.ProductCard > img
+{
+    height: 275px;
+    object-fit:contain;
+}
+.ProductCard > p
+{
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 100%;
+    margin: 0;
+    padding-left: 15%;
+    border-top: solid #E8E8E8 3px;
+    padding-top: 7px;
+}
+.ProductCard > div
+{
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    padding-left: 15%;
+}
+.ProductCard > button
+{
+    width: 85%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
