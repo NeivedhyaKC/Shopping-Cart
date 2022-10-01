@@ -1,23 +1,23 @@
-import { useEffect } from "react";
 import "./Products.css";
 import products  from "../products";
 import ProductCard from "./ProductCard";
+import uniqid from "uniqid";
 
-const Products =() =>
+const Products =(props) =>
 {
-
     return (
         <div>
             
             <div id="ProductsContainer">
-                <ProductCard product={products[0]}/>
-                <ProductCard product={products[1]}/>
-                <ProductCard product={products[3]}/>
-                <ProductCard product={products[4]}/>
-                <ProductCard product={products[5]}/>            
+                {
+                    products.map((product) =>
+                    (
+                        <ProductCard key ={uniqid()} product={product} setProductsInCart = {props.setProductsInCart} 
+                            productsInCart ={props.productsInCart}/>
+                    ))
+                }    
             </div>
         </div>
-
     );
 }
 

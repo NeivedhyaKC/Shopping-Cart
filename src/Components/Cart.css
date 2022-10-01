@@ -2,7 +2,7 @@
 {
     text-align: center;
     display: flex;
-    position: absolute;
+    position: fixed;
     top:0;
     right: 0%;
     flex-direction: column;
@@ -23,7 +23,7 @@
     width: 520px;
 }
 
-#CartContainer button
+#CartContainer > button
 {
     width:60%;
     font-size: 2em;
@@ -50,4 +50,43 @@
 #CloseBtn
 {
     background-color: rgb(255, 154, 154);
+}
+
+.ItemContainer
+{
+    height: 40%;
+    overflow: auto;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CartItemDiv
+{
+    display: flex;
+    gap: 5px;
+    height: 100px;
+}
+
+.CartItemImg
+{
+    height: 100px;
+}
+.CartItemName
+{
+    overflow: hidden;
+}
+.CartItemQuantityDiv
+{
+    display: flex;
+    height: 47%;
+    gap: 20px;
+}
+.CartItemQuantityDiv button
+{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    border: none;
 }
